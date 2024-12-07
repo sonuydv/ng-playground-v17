@@ -1,0 +1,13 @@
+<div class="w-full h-full p-10 flex flex-wrap gap-4 justify-start items-start">
+
+  <ng-container *ngFor="let product of cartService.products()">
+  <mat-card class="p-5 bg-yellow-400 ">
+      <mat-card-title>{{product.productTitle}}</mat-card-title>
+      <mat-card-actions>
+        <button (click)="cartService.addToCart(product)" mat-raised-button class="bg-green-800 flex flex-row justify-center items-center gap-2">
+          <mat-icon>add</mat-icon>
+          Add to Cart</button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+</div>

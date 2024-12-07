@@ -1,0 +1,24 @@
+<div class="w-full h-full p-10 flex flex-col justify-start items-center gap-4">
+
+  <div class="w-full">
+    <button (click)="viewState.navigateRoute('products')" mat-icon-button>
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+
+  <ng-container *ngIf="cartService.cartItemCount() > 0; else empty">
+    <ng-container *ngFor="let product of cartService.cartItems()">
+      <mat-card class="p-5 bg-yellow-400 ">
+        <mat-card-title>{{product.productTitle}}</mat-card-title>
+        <mat-card-actions>
+          <button (click)="cartService.removeFromCart(product)" mat-raised-button class="bg-red-500 flex flex-row justify-center items-center gap-2">
+            Remove</button>
+        </mat-card-actions>
+      </mat-card>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #empty>
+   <h4>Cart is Empty</h4>
+  </ng-template>
+</div>

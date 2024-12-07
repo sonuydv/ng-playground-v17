@@ -1,0 +1,26 @@
+<div class="root-component">
+  <form [formGroup]="form">
+   <div class="form-control">
+     <p class="label">Name</p>
+     <input formControlName="name">
+   </div>
+
+    <div class="form-group" formGroupName="address">
+      <div class="form-control">
+        <p class="label">City</p>
+        <input formControlName="city">
+      </div>
+
+      <div class="form-control">
+        <p class="label">State</p>
+        <input formControlName="state">
+      </div>
+
+      <div class="form-control">
+        <p class="label">Country</p>
+        <input formControlName="country">
+      </div>
+    </div>
+  </form>
+  <button (click)="patchValue()" mat-flat-button>Patch</button>
+</div>

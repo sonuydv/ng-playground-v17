@@ -1,0 +1,20 @@
+
+:host{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.root-component{
+  width: 60%;
+  height: 70%;
+  padding: 20px;
+  border: 1px gray solid;
+
+  input{
+    outline: none !important;
+    border: 1px #b1b0b0 solid;
+  }
+}

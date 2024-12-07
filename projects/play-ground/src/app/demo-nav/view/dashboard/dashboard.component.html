@@ -1,0 +1,11 @@
+<div class="p-60 w-full h-full flex flex-col justify-start items-start gap-8">
+
+  <button [routerLink]="link.path"
+          *ngFor="let link of routeList;index as i"
+          class="w-1/2 bg-red-500"
+          mat-raised-button>
+    {{link.title}}
+    <mat-icon>arrow_forward</mat-icon>
+  </button>
+
+</div>

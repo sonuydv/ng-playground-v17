@@ -1,0 +1,9 @@
+<div class="h-full w-full bg-gray-800 px-10 flex flex-row justify-start items-center">
+  <h1 class="text-white font-bold">Let's Shop</h1>
+  <div (click)="viewState.navigateRoute('cart')" class="relative ml-auto flex flex-row justify-start">
+    <button mat-icon-button >
+      <mat-icon class="bg-red-500">add_shopping_cart</mat-icon>
+    </button>
+    <p class="absolute top h-5 w-5 pl-1 rounded-full bg-yellow-600">{{cartSrv.cartItemCount()}}</p>
+  </div>
+</div>
