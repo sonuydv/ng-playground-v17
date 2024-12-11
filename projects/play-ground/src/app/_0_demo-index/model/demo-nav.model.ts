@@ -22,4 +22,9 @@ export const demoPathList: DemoNavModel[]  = [
     path: DemoRoutes.reactiveForm
   },
 
+  {
+    title: 'ngXS demo',
+    path: DemoRoutes.ngxsDemo
+  },
+
 ]

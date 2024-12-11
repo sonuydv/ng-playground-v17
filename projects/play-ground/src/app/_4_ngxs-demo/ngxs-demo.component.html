@@ -1,0 +1,22 @@
+<h4>Page List</h4>
+<div  class="p-10 flex flex-col justify-start items-start gap-2">
+
+  @if(isLoading$ | async){
+   <p>Loading...</p>
+  } @else {
+
+    @for(page of pages$ | async;track page.title){
+      <div class="w-40 flex flex-row justify-start items-start p-2 bg-gray-300 rounded-md">
+        <p>{{page.id+1}}.</p>
+        <p>{{page.title}}</p>
+        <button (click)="onDelete(page)" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    } @empty {
+      <p>Not found!</p>
+    }
+  }
+
+
+</div>
