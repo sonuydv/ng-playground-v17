@@ -11,10 +11,12 @@ import {provideStore} from "@ngxs/store";
 import {withNgxsLoggerPlugin} from "@ngxs/logger-plugin";
 import {withNgxsReduxDevtoolsPlugin} from "@ngxs/devtools-plugin";
 import {environment} from "../environments/environment.development";
+import {provideHttpClient} from "@angular/common/http";
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimations(),
+    provideHttpClient(),
     provideRouter(routes),
     // importProvidersFrom(
     //   StoreModule.forRoot({

@@ -27,4 +27,9 @@ export const demoPathList: DemoNavModel[]  = [
     path: DemoRoutes.ngxsDemo
   },
 
+  {
+    title: 'Html Content In Popup',
+    path: DemoRoutes.htmlContentInPopup
+  },
+
 ]

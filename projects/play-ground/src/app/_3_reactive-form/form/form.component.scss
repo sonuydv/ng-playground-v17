@@ -1,20 +1,35 @@
 
 :host{
-  width: 100vw;
-  height: 100vh;
+  width: 80vw;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
+
+input{
+  outline: none !important;
+  border: 1px #b1b0b0 solid;
+}
+
+.reactive{
+  width: 40%;
+  height: 70%;
+  border: 1px gray solid;
+}
+
+.template{
+  width: 40%;
+  height: 70%;
+  border: 1px gray solid;
+}
+
 .root-component{
   width: 60%;
   height: 70%;
   padding: 20px;
-  border: 1px gray solid;
 
-  input{
-    outline: none !important;
-    border: 1px #b1b0b0 solid;
-  }
+
 }

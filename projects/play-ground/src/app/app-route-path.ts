@@ -3,4 +3,5 @@ export enum DemoRoutes{
   reduxStoreDemo = 'reduxStoreDemo',
   reactiveForm = 'reactiveForm',
   ngxsDemo = 'ngxsDemo',
+  htmlContentInPopup = 'htmlContentInPopup',
 }

@@ -1,0 +1,17 @@
+
+<form [formGroup]="form">
+
+  <mat-form-field appearance="outline">
+    <label>Applicant Name</label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <label>Mobile</label>
+    <input matInput formControlName="mobile">
+  </mat-form-field>
+
+</form>
+
+
+<button (click)="openPopup()"  mat-flat-button color="primary">Open</button>

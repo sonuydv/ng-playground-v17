@@ -10,6 +10,7 @@ import {NgxsDemoComponent} from "./_4_ngxs-demo/ngxs-demo.component";
 import {provideStates} from "@ngxs/store";
 import {PagesState} from "./_4_ngxs-demo/state/pages.store";
 import {PagesApi} from "./_4_ngxs-demo/api/pages.api";
+import {_5_HtmlContentComponent} from "./_5_html-content/_5_-html-content.component";
 
 
 export const routes: Routes = [
@@ -48,6 +49,10 @@ export const routes: Routes = [
     path:DemoRoutes.ngxsDemo,
     component: NgxsDemoComponent,
     providers:[PagesApi,provideStates([PagesState])]
+  },
+  {
+    path:DemoRoutes.htmlContentInPopup,
+    component:_5_HtmlContentComponent,
   }
 ];
 
